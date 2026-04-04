@@ -9,7 +9,7 @@ export const useChatStore = create(()=>({
     selectedUser: null,
     isUserLoading : false,
     isMessagesLoading : false,
-    isSoundEnabled : localStorage.getItem("isSoundEnabled")===true
+    isSoundEnabled : localStorage.getItem("isSoundEnabled")===true,
 
     toggleSound : ()=>{
         localStorage.setItem("isSoundEnabled",!get().isSoundEnabled)
